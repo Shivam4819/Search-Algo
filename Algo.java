@@ -26,14 +26,14 @@ public class Algo {
      first.find();
       
       MinAndMax minAndmax=new MinAndMax();
-     minAndmax.findMinAndMax();
+    minAndmax.findMinAndMax();
      
      NumberOfOccurance numberOfOccurance=new NumberOfOccurance();
-     numberOfOccurance.findOccurance();
+    numberOfOccurance.findOccurance();
      
      FindMissing find=new FindMissing();
-     find.findNum();
-     find.method2();
+    find.findNum();
+    find.method2();
     
     RotatedArray rotatedArray=new RotatedArray();
     rotatedArray.search();

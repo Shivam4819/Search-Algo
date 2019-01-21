@@ -24,7 +24,7 @@ public class FixedPoint {
         }
     }
     public void method2(){
-        int arr[]={-10,-5,3,4,7,9};
+        int arr[]={-10, -1, 0, 3 , 10, 11, 30, 50, 100};
         System.out.println("from 2 ");
         int middle=arr.length/2;
         int flag=1;
@@ -54,6 +54,26 @@ public class FixedPoint {
         if(flag==1){
             System.out.println("-1");
         }
+        int n=arr.length;
         
+        System.out.println("from method3->");
+        System.out.println(method3(arr, 0, n-1));
+    }
+    
+    public int method3(int arr[],int low,int high){
+        if(high>=low){
+            int mid=(low+high)/2;
+
+            if(arr[mid]==mid)
+                return mid;
+
+            if(arr[mid]>mid){
+                return method3(arr, 0, mid-1);
+            }
+            else{
+                return method3(arr, mid+1, high);
+            }
+        }
+        return -1;
     }
 }

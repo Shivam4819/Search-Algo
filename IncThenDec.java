@@ -28,7 +28,7 @@ public class IncThenDec {
     }
     public void method2(){
         System.out.println("from method2 ");
-        int arr[]={120, 100, 80, 20, 0};
+            int arr[]={1, 3, 50, 10, 9, 7, 6};
         int middle=arr.length/2;
         int max=0;
         //System.out.println("middle"+middle+" "+arr[middle]);
@@ -59,5 +59,37 @@ public class IncThenDec {
             }
             System.out.println("from 5th->"+max);
         }
+        int n=arr.length;
+        System.out.println("from method3-->");
+         System.out.println(method3(arr, 0, n-1));
+       
+    }
+    
+    public int method3(int arr[],int low,int high){
+        
+        if(low==high){
+            return arr[low];
+        }
+        else if(high==low+1&&arr[high]>arr[low]){
+            return arr[high];
+        }
+        else if(high==low+1 && arr[high]<=arr[low]){
+            return arr[low];
+        }
+        
+        int mid=(low+high)/2;
+        
+        if(arr[mid]>arr[mid+1]&&arr[mid]>arr[mid-1]){
+           return arr[mid];
+        }
+        if(arr[mid]<arr[mid-1]){
+            return method3(arr, 0, mid-1);
+        }
+        else{
+          return method3(arr, mid+1, high);
+        } 
+        
+        
+        
     }
 }
