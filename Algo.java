@@ -20,26 +20,34 @@ public class Algo {
     public static void main(String[] args) {
         // TODO code application logic here
       SumClosetToZero sumClose=new SumClosetToZero();
-   //  sumClose.solve();
+     sumClose.solve();
       
       FirstTwoSmallestNum first=new FirstTwoSmallestNum();
-    // first.find();
+     first.find();
       
       MinAndMax minAndmax=new MinAndMax();
-    // minAndmax.findMinAndMax();
+     minAndmax.findMinAndMax();
      
      NumberOfOccurance numberOfOccurance=new NumberOfOccurance();
-    // numberOfOccurance.findOccurance();
+     numberOfOccurance.findOccurance();
      
      FindMissing find=new FindMissing();
-    // find.findNum();
-    // find.method2();
+     find.findNum();
+     find.method2();
     
-    RotatedArray r=new RotatedArray();
-    //r.search();
+    RotatedArray rotatedArray=new RotatedArray();
+    rotatedArray.search();
     
-    RepeatingAndMissing r1=new RepeatingAndMissing();
-    r1.repeatAndMiss();
+    RepeatingAndMissing repeating=new RepeatingAndMissing();
+    repeating.repeatAndMiss();
+    
+    FixedPoint fixed=new FixedPoint();
+    fixed.findFixedPoint();
+    fixed.method2();
+   
+   IncThenDec inc=new IncThenDec();
+   inc.findMax();
+   inc.method2();
     }
     
 }
